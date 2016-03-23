@@ -1,0 +1,26 @@
+#nav {
+  width: 100%;
+  float: left;
+  background: #cccccc;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nav a {
+  margin: 10px 20px 10px 20px;
+  line-height: 2em;
+  font-variant: small-caps;
+}
+
+img {
+  width: 200px;
+  margin: 5px;
+}
+
+.profile {}
+
+.column{
+  float: right;
+  width: 240px;
+}
+
