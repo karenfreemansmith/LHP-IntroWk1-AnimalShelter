@@ -12,12 +12,14 @@
   font-variant: small-caps;
 }
 
-img {
+.profile img {
   width: 200px;
   margin: 5px;
 }
 
-.profile {}
+.profile {
+  background: #f5f5f5;
+}
 
 .column{
   float: right;
