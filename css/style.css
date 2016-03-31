@@ -26,6 +26,21 @@
   width: 240px;
 }
 
+button {
+  margin: 0px 50px 0px 50px;
+}
+
+.right {
+  float: right;
+  border: solid 1px black;
+  margin-left: 15px;
+}
+.left {
+  float: left;
+  border: solid 1px black;
+  margin-right: 15px;
+}
+
 #confirm {
   display: none;
 }
