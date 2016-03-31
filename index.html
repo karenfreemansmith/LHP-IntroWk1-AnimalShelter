@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Shelter Home</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div id="nav">
@@ -14,5 +16,19 @@
       <a href="exotics.html">other pets</a>
     </div>
     <h1>Shelter Home</h1>
+    <div id="appointment">
+      <p>Because of high demand we require appointments for adoptions. Please fill out the form below to schedule a time to visit our pets.</p>
+      <form>
+        <label for="yourname">Name:</label> <input id="yourname" type="text">
+        <label for="yourdate">Date:</label> <input id="yourdate" type="text">
+        <label for="yourtime">Time:</label> <input id="yourtime" type="text">
+        <button type="submit">Set Appointment</button>
+      </form>
+    </div>
+    <div id="confirm">
+      <p>Thank you, <span class="yourname"></span>, for making an appointment to visit our shelter animals!</p>
+      <p>We look forward to seeing you on <span class="yourdate"></span> between <span class="yourtime"></span> and <span class="ourtime"></span>.</p>
+      <p>Please dress comfortably and leave any food or drinks in your vehicle.</p>
+    </div>
   </body>
 </html>

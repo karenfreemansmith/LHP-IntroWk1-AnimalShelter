@@ -26,3 +26,6 @@
   width: 240px;
 }
 
+#confirm {
+  display: none;
+}
