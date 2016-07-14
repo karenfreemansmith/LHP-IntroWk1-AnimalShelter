@@ -1,8 +1,7 @@
 # :dog: [Animal Shelter](http://karenfreemansmith.github.io/shelter) :cat:
 ![project screenshot](/img/screenshot.jpg)
 
-__Version 2: March 30, 2016__
-
+__Version 1.1.0: June 28, 2016__
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
 ### Description
