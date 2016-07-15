@@ -175,195 +175,205 @@
             "description":"George is a rescue animal. He was poached from the Everglades as an egg and is not capable of living in the wild. He needs a very special owner. Classes on alligator handling are available at a discount if you adopt George.",
             "status":"1"
           }
-        ]
-      ]
+        ];
+
+
+      //var petApp = angular.module("petApp",[]);
+      //petApp.controller("petAppCtrl", function($scope) {
+        //$scope.pets=animals;
+        //$scope.page='main';
+      //});
     </script>
   </head>
-  <body ng-app ng-init="page='main'>
-    <div id="nav">
-      <a href="" ng-click="page='main'">home</a>
-      <a href="" ng-click="page='adoption'">adoptions</a>
-      <a href="" ng-click="page='dogs'">dogs</a>
-      <a href="" ng-click="page='cats'">cats</a>
-      <a href="" ng-click="page='other'">other pets</a>
-    </div>
-    <div ng-show="page=='main'">
+  <body ng-app ng-init="page='main'">
+    <header>
       <h1>Shelter Home</h1>
-      <img src="img/dog3.png" class="left">
-      <div id="appointment">
-        <p>Because of high demand we require appointments for adoptions. Please fill out the form below to schedule a time to visit our pets.</p>
-        <form>
-          <p><label for="yourname">Name:</label> <input id="yourname" type="text">
-          <label for="yourdate">Date:</label> <input id="yourdate" type="text"></p>
-          <p><label for="yourtime">Time:</label> <input id="yourtime" type="text">
-          <button type="submit">Set Appointment</button></p>
-        </form>
-      </div>
-      <div id="confirm">
-        <p>Thank you, <span class="yourname"></span>, for making an appointment to visit our shelter animals!</p>
-        <p>We look forward to seeing you on <span class="yourdate"></span> between <span class="yourtime"></span> and <span class="ourtime"></span>.</p>
-        <p>Please dress comfortably and leave any food or drinks in your vehicle.</p>
-      </div>
-    </div>
-    <div ng-show="page=='adoption'">
-      <h1>Shelter Adoptions</h1>
-      <h3>Adopt a Pet</h3>
-      <h3>Other Ways to Help</h3>
-      <p>For those who already have a home full of pets or are unable to own a pet at this time, there are other ways to help our shelter animals.</p>
-      <ul>
-        <li>Schedule time to help socialize our shelter animals by visiting and playing with our pets. A plus if you have previous experience trianing animals.</li>
-        <li>Donate $15 for a pet makeover to help neglected pets find their new family.</li>
-      </ul>
-      <img src="img/donate.png">
-    </div>
-    <div ng-show="page=='cats'">
-      <h1>Shelter Cats</h1>
-      <h3>Currently Available:</h3>
-      <div class="row">
-        <div class="profile column">
-          <h4>NAME</h4>
-          <img src="img/cat1.png">
-          <p>description</p>
+      <div>
+        <div id="nav">
+          <a href="" ng-click="page='main'">home</a>
+          <a href="" ng-click="page='adoption'">adoptions</a>
+          <a href="" ng-click="page='dogs'">dogs</a>
+          <a href="" ng-click="page='cats'">cats</a>
+          <a href="" ng-click="page='other'">other pets</a>
         </div>
-        <div class="profile column">
-          <h4>THE LITTLE RASCALS</h4>
-          <img src="img/cat2.png">
-          <p>description</p>
-        </div>
-        <div class="profile column">
-          <h4>FRED & GINGER</h4>
-          <img src="img/cat3.png">
-          <p>description</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="profile column">
-          <h4>PRINCESS</h4>
-        <img src="img/cat4.png">
-          <p>description</p>
-        </div>
-        <div class="profile column">
-          <h4>NAME</h4>
-        <img src="img/cat5.png">
-          <p>description</p>
-        </div>
-        <div class="profile column">
-          <h4>SEYMORE</h4>
-        <img src="img/cat6.png">
-          <p>description</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="profile column">
-          <h4>GARFIELD</h4>
-        <img src="img/cat7.png">
-          <p>description</p>
-        </div>
-        <div class="profile column">
-          <h4>TWEEDLE-DUM</h4>
-        <img src="img/cat8.png">
-          <p>description</p>
-        </div>
-        <div class="profile column">
-          <h4>TWEEDLE-DEE</h4>
-        <img src="img/cat9.png">
-          <p>description</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="profile column">
-          <h4>NAME</h4>
-        <img src="img/cat10.png">
-          <p>description</p>
-        </div>
-      </div>
-    </div>
-    <div ng-show="page=='dogs'">
-      <h1>Shelter Dogs</h1>
-      <h3>Currently Available:</h3>
-        <div class="row">
-          <div class="profile column">
-            <h4>CLIFFORD</h4>
-            <img src="img/dog1.png">
-            <p>description</p>
-          </div>
-          <div class="profile column">
-            <h4>FRED</h4>
-            <img src="img/dog2.png">
-            <p>description</p>
-          </div>
-          <div class="profile column">
-            <h4>SARGE</h4>
-            <img src="img/dog3.png">
-            <p>description</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="profile column">
-            <h4>SHEBA</h4>
-            <img src="img/dog4.png">
-            <p>description</p>
-          </div>
-          <div class="profile column">
-            <h4>HARRY & HENRY</h4>
-            <img src="img/dog5.png">
-            <p>description</p>
-          </div>
-          <div class="profile column">
-            <h4>SPOT & FIDO</h4>
-            <img src="img/dog6.png">
-            <p>description</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="profile column">
-            <h4>BLAZE</h4>
-            <img src="img/dog7.png">
-            <p>description</p>
-          </div>
-          <div class="profile column">
-            <h4>CHESTER</h4>
-            <img src="img/dog8.png">
-            <p>description</p>
-          </div>
-        </div>
-    </div>
+    </header>
+      <div ng-show="page=='main'">
 
-    <div ng-show="page=='other'">
-      <h1>Other Shelter Pets</h1>
-      <h3>Currently Available:</h3>
-      <div class="row">
-        <div class="profile column">
-          <h4>ELMER</h4>
-          <img src="img/exotic1.png">
-          <p>He's some pig! Unfortunatly, his previous owners had to move to a small apartment in the city and didn't have room for Elmer anymore. He's looking for a large backyard with plenty of mud holes to play in.</p>
+        <img src="img/dog3.png" class="left">
+        <div id="appointment">
+          <p>Because of high demand we require appointments for adoptions. Please fill out the form below to schedule a time to visit our pets.</p>
+          <form>
+            <p><label for="yourname">Name:</label> <input id="yourname" type="text">
+            <label for="yourdate">Date:</label> <input id="yourdate" type="text"></p>
+            <p><label for="yourtime">Time:</label> <input id="yourtime" type="text">
+            <button type="submit">Set Appointment</button></p>
+          </form>
         </div>
-        <div class="profile column">
-          <h4>PETER</h4>
-          <img src="img/exotic2.png">
-          <p>Little Peter Cottontail was caught in Farmer Jone's garden one too many times. Peter would like a home with a family who would feed him lots of carrots and can keep him safely away from the neighbor's yard.</p>
-        </div>
-        <div class="profile column">
-          <h4>HAMTARO</h4>
-          <img src="img/exotic3.png">
-          <p>Hamtaro was severely traumatized by the cats in his last home and tends to be shy. He likes gentle children and would prefer a home without other pets.</p>
+        <div id="confirm">
+          <p>Thank you, <span class="yourname"></span>, for making an appointment to visit our shelter animals!</p>
+          <p>We look forward to seeing you on <span class="yourdate"></span> between <span class="yourtime"></span> and <span class="ourtime"></span>.</p>
+          <p>Please dress comfortably and leave any food or drinks in your vehicle.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="profile column">
-          <h4>GEORGE</h4>
-          <img src="img/exotic4.png">
-          <p>George is a rescue animal. He was poached from the Everglades as an egg and is not capable of living in the wild. He needs a very special owner. Classes on alligator handling are available at a discount if you adopt George.</p>
+      <div ng-show="page=='adoption'">
+        <h1>Shelter Adoptions</h1>
+        <h3>Adopt a Pet</h3>
+        <h3>Other Ways to Help</h3>
+        <p>For those who already have a home full of pets or are unable to own a pet at this time, there are other ways to help our shelter animals.</p>
+        <ul>
+          <li>Schedule time to help socialize our shelter animals by visiting and playing with our pets. A plus if you have previous experience trianing animals.</li>
+          <li>Donate $15 for a pet makeover to help neglected pets find their new family.</li>
+        </ul>
+        <img src="img/donate.png">
+      </div>
+      <div ng-show="page=='cats'">
+        <h1>Shelter Cats</h1>
+        <h3>Currently Available:</h3>
+        <div class="row">
+          <div class="profile column">
+            <h4>NAME</h4>
+            <img src="img/cat1.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>THE LITTLE RASCALS</h4>
+            <img src="img/cat2.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>FRED & GINGER</h4>
+            <img src="img/cat3.png">
+            <p>description</p>
+          </div>
         </div>
-        <div class="profile column">
-          <h4>FOO-FOO</h4>
-          <img src="img/exotic5.png">
-          <p>Foo-Foo was abandoned by the good fairy on our doorstep. He has a habbit of escaping most cages and loves hiding out in the forest terrorizing the field mice. He needs an owner who knows how to set boundaries.</p>
+        <div class="row">
+          <div class="profile column">
+            <h4>PRINCESS</h4>
+          <img src="img/cat4.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>NAME</h4>
+          <img src="img/cat5.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>SEYMORE</h4>
+          <img src="img/cat6.png">
+            <p>description</p>
+          </div>
         </div>
-        <div class="profile column">
-          <h4>LUKE & LEIA</h4>
-          <img src="img/exotic6.png">
-          <p>These twins are looking for a warm and loving environment. They are sure to attract lots of attention from your friends and neighbors. Low upkeep.</p>
+        <div class="row">
+          <div class="profile column">
+            <h4>GARFIELD</h4>
+          <img src="img/cat7.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>TWEEDLE-DUM</h4>
+          <img src="img/cat8.png">
+            <p>description</p>
+          </div>
+          <div class="profile column">
+            <h4>TWEEDLE-DEE</h4>
+          <img src="img/cat9.png">
+            <p>description</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="profile column">
+            <h4>NAME</h4>
+          <img src="img/cat10.png">
+            <p>description</p>
+          </div>
+        </div>
+      </div>
+      <div ng-show="page=='dogs'">
+        <h1>Shelter Dogs</h1>
+        <h3>Currently Available:</h3>
+          <div class="row">
+            <div class="profile column">
+              <h4>CLIFFORD</h4>
+              <img src="img/dog1.png">
+              <p>description</p>
+            </div>
+            <div class="profile column">
+              <h4>FRED</h4>
+              <img src="img/dog2.png">
+              <p>description</p>
+            </div>
+            <div class="profile column">
+              <h4>SARGE</h4>
+              <img src="img/dog3.png">
+              <p>description</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profile column">
+              <h4>SHEBA</h4>
+              <img src="img/dog4.png">
+              <p>description</p>
+            </div>
+            <div class="profile column">
+              <h4>HARRY & HENRY</h4>
+              <img src="img/dog5.png">
+              <p>description</p>
+            </div>
+            <div class="profile column">
+              <h4>SPOT & FIDO</h4>
+              <img src="img/dog6.png">
+              <p>description</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profile column">
+              <h4>BLAZE</h4>
+              <img src="img/dog7.png">
+              <p>description</p>
+            </div>
+            <div class="profile column">
+              <h4>CHESTER</h4>
+              <img src="img/dog8.png">
+              <p>description</p>
+            </div>
+          </div>
+      </div>
+      <div ng-show="page=='other'">
+        <h1>Other Shelter Pets</h1>
+        <h3>Currently Available:</h3>
+        <div class="row">
+          <div class="profile column">
+            <h4>ELMER</h4>
+            <img src="img/exotic1.png">
+            <p>He's some pig! Unfortunatly, his previous owners had to move to a small apartment in the city and didn't have room for Elmer anymore. He's looking for a large backyard with plenty of mud holes to play in.</p>
+          </div>
+          <div class="profile column">
+            <h4>PETER</h4>
+            <img src="img/exotic2.png">
+            <p>Little Peter Cottontail was caught in Farmer Jone's garden one too many times. Peter would like a home with a family who would feed him lots of carrots and can keep him safely away from the neighbor's yard.</p>
+          </div>
+          <div class="profile column">
+            <h4>HAMTARO</h4>
+            <img src="img/exotic3.png">
+            <p>Hamtaro was severely traumatized by the cats in his last home and tends to be shy. He likes gentle children and would prefer a home without other pets.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="profile column">
+            <h4>GEORGE</h4>
+            <img src="img/exotic4.png">
+            <p>George is a rescue animal. He was poached from the Everglades as an egg and is not capable of living in the wild. He needs a very special owner. Classes on alligator handling are available at a discount if you adopt George.</p>
+          </div>
+          <div class="profile column">
+            <h4>FOO-FOO</h4>
+            <img src="img/exotic5.png">
+            <p>Foo-Foo was abandoned by the good fairy on our doorstep. He has a habbit of escaping most cages and loves hiding out in the forest terrorizing the field mice. He needs an owner who knows how to set boundaries.</p>
+          </div>
+          <div class="profile column">
+            <h4>LUKE & LEIA</h4>
+            <img src="img/exotic6.png">
+            <p>These twins are looking for a warm and loving environment. They are sure to attract lots of attention from your friends and neighbors. Low upkeep.</p>
+          </div>
         </div>
       </div>
     </div>
