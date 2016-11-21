@@ -12,20 +12,22 @@ version adds a form to request an appointment to see the animals.
 
 v.2 Converting to Angular.js
 
-### Setup/Installation
-*None required. Clone or download and extract to use*
+## Technologies Used
+HTML, CSS
 
-### Support & Contact
-For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* _OR_
+* Clone diectory 
+* Open index.html in your favorite browser
 
-### Known Issues
-* Still need name & description for several animals
-* Could look nicer, better stying, possibly Bootstrap?
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
-### Technologies Used
-###### HTML, CSS, JavaScript, Angular.js
+## Known Issues
+* None
 
-### Legal
+## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 **_Karen Freeman-Smith_**
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
