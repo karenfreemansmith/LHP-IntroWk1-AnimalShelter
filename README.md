@@ -3,7 +3,7 @@ Version 0.2.0: June 28, 2016
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ### Technologies Used
-HTML, CSS, JavaScript, jQuery, Angular.js, Git, Github
+HTML, CSS/Sass, JavaScript, jQuery, Angular.js, Git, Github
 
 ![screenshot of project running](screenshot.png)
 
